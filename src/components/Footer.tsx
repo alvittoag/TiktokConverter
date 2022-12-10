@@ -2,7 +2,7 @@ import { BsFacebook, BsGithub, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="py-2 mt-8 px-3 bg-gradient-to-r from-pink-600 to-pink-600 border-t border-gray-300 lg:mt-12 rounded-t-full bottom-0">
+    <div className="py-2 mt-8 px-3 bg-gradient-to-r from-pink-600 to-pink-600 border-t border-gray-300 lg:mt-20 rounded-t-full bottom-0 lg:py-0">
       <h1 className="text-center mt-3 text-white font-bold">
         Made By Alvitto Aprilian Gumay
       </h1>

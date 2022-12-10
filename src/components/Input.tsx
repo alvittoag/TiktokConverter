@@ -28,13 +28,16 @@ const Input = () => {
           type="text"
           required
           {...register("search")}
-          className="ring-1 ring-gray-300 py-2 px-3 lg:py-3 rounded-md lg:w-[550px]"
+          className="ring-1 ring-gray-300 py-3 px-3 lg:py-3 rounded-md lg:w-[550px]"
         />
         <button
           type="submit"
-          className="bg-blue-600 text-white mt-3 py-2 rounded-md lg:-mt-0 lg: px-5 lg:py-3 flex gap-2 items-center text-center justify-center"
+          className="bg-blue-600 text-white mt-3 py-3 rounded-md lg:-mt-0 lg: px-5 lg:py-3 flex gap-1 items-center text-center justify-center"
         >
-          <AiOutlineDownload size={24} />
+          <AiOutlineDownload
+            className="animate-bounce lg:animate-none"
+            size={24}
+          />
           Download
         </button>
       </div>

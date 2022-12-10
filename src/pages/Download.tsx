@@ -20,7 +20,6 @@ const Download = () => {
   const { data, isLoading, isError }: Search = getApi(
     `https://api.hayo.my.id/api/tiktok/4?url=${search}`
   );
-  console.log(data);
 
   const navigate = useNavigate();
 
@@ -29,13 +28,13 @@ const Download = () => {
       {isLoading ? (
         <Loading />
       ) : data ? (
-        <div className="mt-7 px-3 flex flex-col gap-3 lg:flex-row lg:justify-between lg:px-14 lg:border-b lg:border-gray-300 lg:pb-10 lg:items-center">
+        <div className="mt-7 px-3 flex flex-col gap-3 lg:flex-row lg:justify-between lg:px-16 lg:border-b lg:border-gray-300 lg:pb-10 lg:items-center lg:mt-16">
           <img
             className="w-52 mx-auto lg:mx-0 rounded-lg"
             src={data?.img}
             alt="/"
           />
-          <div className="flex flex-col gap-4 mt-6 lg:mt-0">
+          <div className="flex flex-col gap-3 lg:gap-4 mt-6 lg:mt-0">
             <a href={data?.link1}>
               <div className="bg-sky-700 py-4 px-3 lg:w-96 text-white rounded-md text-center flex justify-center gap-1">
                 <AiOutlineDownload size={24} />
