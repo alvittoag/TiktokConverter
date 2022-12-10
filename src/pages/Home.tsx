@@ -6,7 +6,7 @@ import Tutorial from "../components/Tutorial";
 const Home = () => {
   return (
     <div>
-      <div className="text-center flex flex-col gap-2 mt-7 lg:mt-14">
+      <div className="text-center flex flex-col gap-2 mt-7 lg:mt-14 h-max">
         <h1 className="font-bold text-xl text-slate-700 lg:text-4xl">
           Download Video Tiktok
         </h1>
